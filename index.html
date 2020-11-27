@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title>Web prototype</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<!-----Favicon----->
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<div class="logo">
+				<a href="index.html"><img class="logo" src="images/LOGO_text.png" alt="Diabetes NSW logo with text" width=220px ></a>
+        </div>
+
+      <div class="nav">
+        <a href="index.html#about">About</a>
+        <a href="education.html">Education</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="volunteer.html" class="border">Volunteer</a>
+        <a href="https://diabetesnsw.com.au/get-involved/make-a-donation/donate/" class="border">Donate</a>
+      </div>  
+    </header>  
+
+    <main>
+      <div class="searchbar">
+        <form>
+          <input type="text" placeholder="   Search from here" style='font-size:16px'>
+          <button style='font-size:16px'>Submit</button>
+        </form>
+      </div>
+
+      <div class="slideshow">
+        <div class="img">
+         <a href="volunteer.html"><img src="images/Home-volunteer.png" alt="Volunteer call-to-action" /></a>
+        </div>  
+      </div>
+
+      <!---About--->
+      <div class="about" id="about">
+        <div class="about-item">
+          <div class="diabetes">
+            <strong>About Diabetes</strong>
+          </div>
+            <p>Diabetes is a chronic condition that affects the way the body processes blood sugar known as glucose. For your body to work properly, you need to maintain a healthy level of glucose in your blood.</p>
+            <p>High levels of glucose in your blood can have short- and long-term effects on your body, possibly causing damage to your heart, brain, kidneys, eyes and feet.</p> 
+        </div>
+        <div class="about-item">
+          <div class="diabetes">
+            <strong>About Us</strong>
+          </div>
+            <p><strong>Our Mission</strong><br>
+            Diabetes NSW & ACT is dedicated to helping people living with or at risk of diabetes, their families, friends and carers.</p>
+            <p><strong>Our history</strong><br>
+            From humble beginnings, Diabetes NSW & ACT has grown to become Australia’s oldest and largest member-based diabetes charity.</p> 
+        </div>    
+      </div>
+
+      <div class="contact" id="contact">
+        <h2>Contact us</h2><br>
+        <h3><strong>Diabetes NSW&ACT Contact Centre</strong></h3>
+        <p>T: 1300 342 238 or 02 9552 9942</p>
+        <p>F: 02 9518 9443</p>
+        <p>E: customerservice@diabetesnsw.com.au</p>
+        <p>Our Contact Centre is available:<br>Monday, Tuesday, Wednesday and Friday – 8:30am to 4:30pm<br>Thursdays – 9:30am to 4:30pm</p> 
+      </div>     
+    </main>
+
+    <footer>
+      <div class="footer">
+        <p>Copyright ©2020 Diabetes NSW & ACT. All rights reserved. ABN 84 001 363 766 - CFN 12458</p>
+        <p>
+          <a href="https://www.facebook.com/DiabetesNSWACT/" ><img src="https://img.icons8.com/ios-filled/24/000000/facebook-new.png"/></a>
+          <a href="https://twitter.com/dnsw_act" ><img src="https://img.icons8.com/metro/26/000000/twitter.png"/></a>
+          <a href="https://www.linkedin.com/company/diabetesnsw/" ><img src="https://img.icons8.com/ios-filled/24/000000/linkedin.png"/></a>
+        </p>
+      </div>     
+    </footer> 
+  </div>
+    
+      
     <script src="script.js"></script>
   </body>
 </html>

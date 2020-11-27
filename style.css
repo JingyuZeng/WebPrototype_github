@@ -1,0 +1,687 @@
+/*----------GLOBAL----------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,h2,h3 {
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-size: 16px;
+  color: #333;
+}
+
+.border {
+  border: 2px solid #fcee21;
+}
+
+.container {
+  width: auto;
+  margin: 0 atuo;
+  position: relative;
+  /*border: 1px solid*/
+}
+
+/*----------Home Page----------*/
+/*---Header---*/
+header {
+  overflow: hidden;
+  display: flex;
+  padding: 20px;
+  position: sticky;
+  top: 0px;
+  background: white;
+  z-index: 999;
+  justify-content: space-between;
+}
+header a {
+  position: relative;
+}
+header .logo {
+  float: left;
+  vertical-align: top;
+}
+header .nav {
+  float: right;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+header .nav a {
+  padding: 5px 0;
+  border-radius: 5px;
+  width: 120px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+header .nav a:hover, header .nav .active {
+  background: #fcee21;
+}
+header .nav a:active {
+  background: #fdf364;
+  box-shadow: 0 3px #a9ddf3;
+  transform: translateY(3px);
+}
+/*---Research bar---*/
+.searchbar {
+  height: auto;
+  background: #a9ddf3;
+  text-align: center; 
+}
+.searchbar input {
+  width: 300px;
+  height: 40px;
+  border-radius: 42px;
+  border: 2px solid #000;
+  background: #fdf690;
+  transition: .2s linear;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.searchbar input:focus {
+  width: 500px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.searchbar button {
+  height: 40px;
+  background: none;
+  border: 2px solid #000;
+  border-radius: 5px;
+  margin: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #000;  
+}
+.searchbar button:hover {
+  background: #29abe2;
+}
+.searchbar button:active {
+  background: #7fcdee;
+  box-shadow: 0 3px #666;
+  transform: translateY(3px);
+}
+
+/*---Sideshow---*/
+.image-nav {
+  margin: 20px 0;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 9px;
+}
+
+/*---About---*/
+.about {
+  display: flex;
+  background: #fdf690;
+}
+.about .about-item {
+  width: 50%;
+  padding: 20px 10%;
+
+}
+.about .about-item .diabetes {
+  width: 120px;
+  height: 120px;
+  border: 5px solid #a9ddf3;
+  background: #a9ddf3;
+  border-radius: 40px;
+  background-size: 100%;
+  margin-top: 30px;
+  margin-left: 30%;
+  text-align: center;
+  line-height: 120px;
+}
+.about .about-item .diabetes:hover {
+  background: #7fcdee;
+} 
+
+.about .about-item p {
+  padding: 5px 10px;
+  line-height: 1.6;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*---About---*/
+.contact {
+  background-image: linear-gradient(#fff, #94d5f0);
+  padding: 20px;
+  position: relative;
+  margin: 20px 0;
+  text-align: center;
+}
+.contact h2 {
+  font-weight: bold;
+}
+.contact p {
+  line-height: 1.8;
+  padding-top: 10px;
+}
+/*----------Footer----------*/
+footer {
+  text-align: center;
+  line-height: 1.6;
+  padding: 20px 0;
+  background: #94d5f0;
+}
+.footer p {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.footer a {
+  text-align: center;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 50px;
+  border-radius: 50%;
+  border: 2px solid #fcee21;
+  margin-top: 30px;
+}
+.footer a:hover {
+	background:#fcee21;
+}
+.footer a:active {
+  background: #fdf364;
+  box-shadow: 0 3px #a9ddf3;
+  transform: translateY(3px);
+}
+
+/*----------Vlounteer----------*/
+/*---Seek---*/
+.seek {
+ background: #fcee21;
+ padding: 20px 0 30px;
+ display: flex;
+}
+.seek .item {
+  width: 33.3%;
+  padding: 0 20px;
+}
+.seek .item h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.seek .item input {
+	width: 300px;
+  height: 22px;
+	background:#fff;
+	padding: 15px;
+	margin-top: 10px;
+  border: 0;
+}
+.seek .item.third {
+  width: 300px;
+  margin-top: 10px;
+}
+.seek .item.third h2 {
+	text-indent: -9999px;
+}
+.seek .item.third p {
+	font-size: 28px;
+  font-weight: bold;
+	background:#29abe2;
+	padding: 6px;
+  text-align: center;
+}
+.seek .item.third p:active {
+  background: #7fcdee;
+  box-shadow: 0 3px #666;
+  transform: translateY(3px);
+}
+/*---Main---*/
+.main {
+  padding: 20px;
+  overflow: hidden;
+}
+.main h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/*---Sidebar_left | Filter---*/
+.sidebar_left {
+  width: 25%;
+  float: left;
+  margin-top: 20px;
+}
+.sidebar_left h4 {
+  font-size: 18px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 20px;
+}
+.sidebar_left h4 a {
+  float: right;
+  color: #29abe2;
+}
+.checks .title {
+  font-size: 18px;
+  padding: 10px 0;
+}
+.checks .title .ico {
+  float: right;
+  width: 20px;
+  height: 10px;
+  background-size: 100%;
+  margin-top: 5px;
+}
+.checks .list{
+	border-bottom: 2px solid #000;
+	padding-bottom: 20px;
+}
+.checks .list .box{
+	display: none;
+}
+.checks .list.show .box{
+	display: block;
+}
+.checks .list-1{
+
+	padding-bottom: 0px;
+}
+.checks .list p{
+	line-height: 2;
+}
+.checks .list p input{
+	margin-right: 10px;
+}
+
+/*---Sidebar_right | Search Results---*/
+.sidebar_right {
+  width: 70%;
+  float: right;
+}
+.sidebar_right .item {
+  background: #94d5f0;
+  padding: 10px 20px 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.sidebar_right .item h2 {
+  font-weight: bold;
+}
+.sidebar_right .item p {
+  padding-top: 10px;
+  line-height: 1.6;
+}
+.sidebar_right .item a {
+  color: #fcee21;
+  float: right;
+  font-weight: bold;
+}
+.sidebar_right .item img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/*---Sidebar_left | Favourite List---*/
+.distance .sidebar_left {
+	width: 235px;
+	border:2px solid #000;
+	padding: 10px;
+	text-align: center;
+}
+.distance .sidebar_left h4 {
+	border-bottom: 0;
+}
+.distance .sidebar_left li {
+	line-height: 2;
+    margin: 0 10px;
+    border: 2px solid #fff;
+    margin-bottom: 8px;
+    padding: 6px 0;
+}
+.distance .sidebar_left li.active{
+	border: 2px dashed #fcee21;
+}
+.distance .sidebar_left .inner {
+	border:2px solid #000;
+	text-align: center;
+	padding: 10px 0 50px;
+	margin-top: 30px;
+}
+.submit {
+	border:none;
+	width: 200px;
+	height: 50px;
+	background: url(images/Volunteer_button.png) no-repeat;
+	background-size: 100%;
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: 20px;
+}
+.submit:active {
+  transform: translateY(3px);
+}
+
+/*---Sidebar_right | Map---*/
+.distance .sidebar_right h3{
+  margin-bottom: 20px;
+}
+.distance .sidebar_right .map img{
+  width: 100%;
+}
+
+/*---Sidebar_left | Volunteer Schedule---*/
+.volunteer .sidebar_left {
+  width: 35%;
+  margin-top: 20px;
+}
+.volunteer .pro {
+  border: 4px dashed #35b0e4;
+  padding: 5px 10px;
+  margin-top: 20px;
+}
+.volunteer .inputs input {
+  display: block;
+  width: 280px;
+  padding: 10px;
+  margin-top: 20px;
+  border: 0px;
+}
+.volunteer .inputs input.i-1 {
+  background: #bee6f6;
+}
+.volunteer .inputs input.i-2 {
+  background: #a9ddf3;
+}
+.volunteer .inputs input.i-3 {
+  background: #7fcdee;
+}
+
+/*---Sidebar_right | Volunteer Form---*/
+.volunteer .sidebar_right{
+	width: 60%;
+}
+.volunteer .form{
+	display: flex;
+	border:2px solid #000;
+	padding: 0 20px;
+}
+.volunteer .form form input,.volunteer .form form textarea{
+	display: block;
+	width: 180px;
+	padding: 10px;
+	margin-top: 20px;
+	border:0;
+	background:#fefabc;
+}
+.volunteer .form input.i-1{
+	background:#fefabc;
+}
+.volunteer .form input.i-2{
+	background:#fef8a6;
+}
+.volunteer .form input.i-3{
+	background:#fdf690;
+}
+.volunteer .form input.i-4{
+	background:#fdf57a;
+	width: 320px;
+}
+.volunteer .form input.i-5{
+	background:#fdf364;
+	width: 320px;
+}
+.volunteer .form form textarea{
+	background:#fdf364;
+	height: 100px;
+	width: 320px;
+}
+.volunteer .form form{
+	padding-right: 20px;
+	border-right:2px dashed #000;
+	padding-bottom: 20px;
+}
+.volunteer .form .inter {
+  padding: 30px;
+}
+.volunteer .form .inter ul{
+  margin-top: 20px;
+}
+.volunteer .form .inter ul li {
+  line-height: 2.5;
+}
+.volunteer .submit {
+  float: right;
+  font-size: 20px;
+}
+.volunteer h3 {
+  margin-bottom: 20px;
+}
+
+/*----------Education----------*/
+.edu-pro {
+  background: #94d5f0;
+  padding: 20px;
+  position: relative;
+}
+.edu-pro h2 {
+  font-weight: bold;
+}
+.edu-pro p {
+  line-height: 1.8;
+  padding-top: 10px;
+}
+.edu-pro .ico{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: url(images/Education_triangle.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	left: 50%;
+	bottom: -30px;
+}
+/*---Physical Two diamond---*/
+.physical {
+  display: flex;
+}
+.physical .item {
+  width: 50%;
+  padding: 20px 10%;
+}
+.physical .item .img {
+  width: 120px;
+  height: 120px;
+  background: url(images/Education_background1.png) no-repeat;
+  background-size: 100%;
+  margin-left: 30%;
+  text-align: center;
+  line-height: 120px;
+}
+.physical .item p {
+  padding: 5px 50px;
+  line-height: 1.6;
+}
+/*---Solutions---*/
+.solutions {
+  padding: 20px;
+}
+.solutions h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.solutions .inner {
+  display: flex;
+}
+.solutions .inner .item {
+  flex: 1;
+  margin-right: 10px;
+}
+.solutions .inner .item .txt {
+  background: #bee6f6;
+  padding: 20px;
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+.solutions .inner .item .txt.bg-1 {
+  padding: 35px 20px;
+}
+.solutions .inner .item .txt.bg-1:hover {
+  background: url(images/Education_bg-1.jpg) no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+}
+.solutions .inner .item .txt.bg-2:hover {
+  background: url(images/Education_bg-2.jpg) no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+}
+.solutions .inner .item .txt.bg-3:hover {
+  background: url(images/Education_bg-3.jpg) no-repeat;
+  background-size: 100% 100%;
+  color:#29abe2;
+}
+.solutions .inner .item .txt.bg-4:hover {
+  background: url(images/Education_bg-4.jpg) no-repeat;
+  background-size: 100% 100%;
+  color: #fdf57a;
+}
+.solutions .inner .item .txt.bg-5:hover {
+  background: url(images/Education_bg-5.jpg) no-repeat;
+  background-size: 100% 100%;
+  color: #29abe2;
+}
+.solutions .inner .item .txt.bg-6:hover {
+  background: url(images/Education_bg-6.jpg) no-repeat;
+  background-size: 100% 100%;
+  color: #29abe2;
+}
+.solutions .inner .item .txt.bg-7:hover {
+  background: url(images/Education_bg-7.jpg) no-repeat;
+  background-size:100% 100%;
+  color: #fff;
+}
+.solutions button.submit {
+  display: block;
+  transform: scale(0.8);
+  margin: 20px auto;
+}
+#myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #29abe2;
+  color: white;
+  cursor: pointer;
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 16px;
+}
+
+#myBtn:hover {
+  background-color: #fdf364; 
+}
+/*----------MEDIA----------*/
+@media screen and (max-width:768px) {
+	.container{
+		width: 100%;
+	}
+	header{
+		padding: 10px;
+    flex-direction: column;
+	}
+    header .logo{
+    	float: none;
+      display: block;
+      width: 100%;
+    }
+    header .nav{
+    	float: none;
+    }
+    header .nav a{
+    	display: block;
+    	width: 90%;
+    	text-align: center;
+    	padding: 10px;
+    	border: 1px dashed;
+    	margin-bottom: 10px;
+    }
+    
+    
+    /*-----Volunteer-----*/
+    .seek {
+      display: block;
+    }
+    .sidebar_left {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .sidebar_right {
+      width: 100%;
+    }
+    .main {
+      padding: 0 20px;
+    }
+    .distance .sidebar_left {
+      width: 90%;
+    }
+    .volunteer .sidebar_left {
+      width: 90%;
+    }
+    .volunteer .sidebar_right {
+      width: 90%;
+    }
+    .volunteer .form {
+      display: block;
+    }
+    .volunteer .form input.i-4,.volunteer .form input.i-5,.volunteer .form form textarea{
+      width: 100%
+    }
+    .volunteer .form form {
+      border-right: 0px;
+    }
+   
+    /*-----Homepage-----*/
+    .searchbar {
+      display: block;
+    }
+    .searchbar input {
+      width: 40%;
+    }  
+    .searchbar input:focus {
+      width: 50%;
+    }  
+    .serchbar .button {
+      width: 80%;
+    }
+    .about {
+      display: block;
+    }
+    .about .about-item{
+     width: 80%;
+    }
+    /*-----Education-----*/
+    .physical{
+     display: block;
+    }
+    .physical .item{
+     width: 80%;
+    }
+    .solutions .inner{
+     display: block;
+    }
+
+}    
